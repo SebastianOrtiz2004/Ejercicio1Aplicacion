@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models; // <- necesario para OpenApiInfo, OpenApiSecurityScheme...
+using Microsoft.OpenApi.Models; 
 using PedidoService.Data;
 using PedidoService.Middleware;
 using PedidoService.Models;
