@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Aplicaciones Distribuidas\\Ejercicio1\\Ejercicio1Aplicacion\\ClienteService\\ClienteService.csproj": {}
+    "C:\\Sexto Semestre\\Aplicaciones Distribuidas\\Ejercicio1Aplicacion\\ClienteService\\ClienteService.csproj": {}
   },
   "projects": {
-    "E:\\Aplicaciones Distribuidas\\Ejercicio1\\Ejercicio1Aplicacion\\ClienteService\\ClienteService.csproj": {
+    "C:\\Sexto Semestre\\Aplicaciones Distribuidas\\Ejercicio1Aplicacion\\ClienteService\\ClienteService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Aplicaciones Distribuidas\\Ejercicio1\\Ejercicio1Aplicacion\\ClienteService\\ClienteService.csproj",
+        "projectUniqueName": "C:\\Sexto Semestre\\Aplicaciones Distribuidas\\Ejercicio1Aplicacion\\ClienteService\\ClienteService.csproj",
         "projectName": "ClienteService",
-        "projectPath": "E:\\Aplicaciones Distribuidas\\Ejercicio1\\Ejercicio1Aplicacion\\ClienteService\\ClienteService.csproj",
-        "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
-        "outputPath": "E:\\Aplicaciones Distribuidas\\Ejercicio1\\Ejercicio1Aplicacion\\ClienteService\\obj\\",
+        "projectPath": "C:\\Sexto Semestre\\Aplicaciones Distribuidas\\Ejercicio1Aplicacion\\ClienteService\\ClienteService.csproj",
+        "packagesPath": "C:\\Users\\ACER_2023\\.nuget\\packages\\",
+        "outputPath": "C:\\Sexto Semestre\\Aplicaciones Distribuidas\\Ejercicio1Aplicacion\\ClienteService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ACER_2023\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -82,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
