@@ -1,0 +1,6 @@
+@PedidoService_HostAddress = http://localhost:5158
+
+GET {{PedidoService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
