@@ -1,5 +1,6 @@
+using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using PedidoService.Models;
 using PedidoService.Services;
 
 namespace PedidoService.Controllers
@@ -15,24 +16,28 @@ namespace PedidoService.Controllers
             _tokenService = tokenService;
         }
 
+        public class LoginDto
+        {
+            [Required] public string Username { get; set; } = default!;
+            [Required] public string Password { get; set; } = default!;
+        }
+
         [HttpPost("login")]
+        [AllowAnonymous] // importante: login sin auth
         public IActionResult Login([FromBody] LoginDto login)
         {
-            // Demo simple: validar usuario fijo
-            if (login.Username == "test" && login.Password == "password")
-            {
-                // Generar token con rol ApiClient
-                var token = _tokenService.BuildToken(login.Username, "ApiClient");
-                return Ok(new { token });
-            }
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-            return Unauthorized();
+            var username = login.Username.Trim();
+            var password = login.Password.Trim();
+
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+                return BadRequest(new { error = "username y password son requeridos" });
+
+            // Genera un token válido para cualquier usuario (rol fijo ApiClient)
+            var token = _tokenService.BuildToken(username, "ApiClient");
+            return Ok(new { token });
         }
-    }
-
-    public class LoginDto
-    {
-        public string Username { get; set; }
-        public string Password { get; set; }
     }
 }
